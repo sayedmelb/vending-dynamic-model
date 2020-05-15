@@ -1,4 +1,4 @@
-import { Component, OnInit, ViewChild, Injectable, AfterViewInit } from '@angular/core';
+import { Component, OnInit, ViewChild, Injectable, AfterViewInit, Input } from '@angular/core';
 import { HttpClient } from "@angular/common/http";
 import { Observable } from 'rxjs';
 import { MachineData } from './model/machine.data';
@@ -52,6 +52,7 @@ export class AppComponent implements OnInit, AfterViewInit {
   errorStatus = false;
   errorMessage = "";
   headerData: any;
+  
 
     imggithubpath: string = "https://github.com/sayedmelb/energysyed/blob/master/src/assets/images/";
   imgpathsuffice: string ="?raw=true"

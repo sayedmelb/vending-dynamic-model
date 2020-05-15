@@ -1,4 +1,5 @@
-<nav-bar (navstatus)="OnNavBarClicked($event)"></nav-bar>
+  headerData: any;
+<nav-bar (navstatus)="OnNavBarClicked($event)" [headerInfo]="headerData"></nav-bar>
 <div class="container-fluid"> 
   <ng-container *ngIf="navtoggle=='home' ">
     <h1 class="header">

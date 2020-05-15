@@ -1,4 +1,4 @@
-import { Component, OnInit, ViewChild, Injectable, Output, EventEmitter } from '@angular/core';
+import { Component, OnInit, ViewChild, Injectable, Output, Input, EventEmitter } from '@angular/core';
 
 
 @Component({
@@ -10,6 +10,7 @@ import { Component, OnInit, ViewChild, Injectable, Output, EventEmitter } from '
 export class NavBar implements OnInit {
     
     @Output() navstatus = new EventEmitter();
+    @Input('headerInfo') headerInfo: any;
  
 
 
