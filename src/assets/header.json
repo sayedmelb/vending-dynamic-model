@@ -21,7 +21,7 @@
       "properties":{
          "home":{
             "widget":"menuitem",
-            "title":"Homep",
+            "title":"Home",
             "itemtype":"text",
             "linkurl":"#",
             "itemwidth":"12em",
@@ -33,7 +33,7 @@
             "itemtype":"text",
             "linkurl":"#",
             "itemwidth":"12em",
-            "visible": true
+            "visible": false
          }
       }
    }
