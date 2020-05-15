@@ -1,6 +1,8 @@
 
   {
       "widget":"menu",
+      "sitetitle": "Vending Machine",
+      "mainheading": "Angular Dynamic Schema model- demo - syed",
       "fieldsets":[
          {
             "fields":[
