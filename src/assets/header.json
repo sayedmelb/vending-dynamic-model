@@ -21,7 +21,7 @@
       "properties":{
          "home":{
             "widget":"menuitem",
-            "title":"Home",
+            "title":"Homep",
             "itemtype":"text",
             "linkurl":"#",
             "itemwidth":"12em",

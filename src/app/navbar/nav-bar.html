@@ -9,11 +9,11 @@
       
           <!-- Links -->
           <ul class="navbar-nav mr-auto">
-            <li class="nav-item active" (click)="setHome($event,'home')" >
-              <a class="nav-link waves-light" mdbWavesEffect   >Home<span class="sr-only">(current)</span></a>
+            <li *ngIf="headerInfo.properties.home.visible" class="nav-item active" (click)="setHome($event,'home')" >
+              <a class="nav-link waves-light" mdbWavesEffect   >{{headerInfo.properties.home.title}}<span class="sr-only">(current)</span></a>
             </li>
-            <li class="nav-item" (click)="setHome($event,'listing')" >
-              <a class="nav-link waves-light" mdbWavesEffect   >Listing</a>
+            <li *ngIf="headerInfo.properties.listing.visible" class="nav-item" (click)="setHome($event,'listing')" >
+              <a class="nav-link waves-light" mdbWavesEffect   >{{headerInfo.properties.listing.title}}</a>
             </li>
            
       
