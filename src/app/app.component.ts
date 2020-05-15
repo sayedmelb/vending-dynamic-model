@@ -51,7 +51,7 @@ export class AppComponent implements OnInit, AfterViewInit {
 
   errorStatus = false;
   errorMessage = "";
-  headerData: any;
+  headerData = {};
   
 
     imggithubpath: string = "https://github.com/sayedmelb/energysyed/blob/master/src/assets/images/";
