@@ -51,6 +51,7 @@ export class AppComponent implements OnInit, AfterViewInit {
 
   errorStatus = false;
   errorMessage = "";
+  headerData: any;
 
     imggithubpath: string = "https://github.com/sayedmelb/energysyed/blob/master/src/assets/images/";
   imgpathsuffice: string ="?raw=true"
@@ -72,6 +73,7 @@ export class AppComponent implements OnInit, AfterViewInit {
   }
 
   ngOnInit() {
+    this.urlheader();
     this.getData();
 
   }
@@ -80,6 +82,24 @@ export class AppComponent implements OnInit, AfterViewInit {
     console.log('this.vendData', this.vendData);
   }
 
+  urlheader() {
+    this.appSettingsService.getHeaderJSON().subscribe(data => {
+    //alert('header data'+ data.widget);
+    this.headerData = data;
+    console.log(data);
+     
+
+    },
+      err => {
+        console.log("http error", err);
+        this.errorStatus = true;
+        this.errorMessage = err.message;
+
+      }
+
+    );
+
+  }
   getData() {
     this.appSettingsService.getJSON().subscribe(data => {
       this.positions = this.normalizeData(data);
