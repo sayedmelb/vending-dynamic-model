@@ -105,6 +105,7 @@ export class AppComponent implements OnInit, AfterViewInit {
   }
   getData() {
     this.appSettingsService.getJSON().subscribe(data => {
+      console.log('LISTING', data);
       this.positions = this.normalizeData(data);
       this.vendData = this.positions[0];
      
