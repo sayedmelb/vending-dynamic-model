@@ -1,76 +1,64 @@
 <div class="colx" [ngClass]="{'navbar-red' : headerInfo.settings.mainbar.setbackground === true }">
-  <mdb-navbar SideClass="navbar navbar-expand-lg navbar-dark unique-color " [containerInside]="true"  >
+	<mdb-navbar SideClass="navbar navbar-expand-lg navbar-dark unique-color " [containerInside]="true">
 
-        <!-- Navbar brand -->
-        <mdb-navbar-brand><a class="navbar-brand" href="#" (click)="setHome($event,'home')" >{{headerInfo.sitetitle}}</a></mdb-navbar-brand>
-      
-        <!-- Collapsible content -->
-        <links>
-      
-          <!-- Links -->
-          <ul class="navbar-nav mr-auto">
-            <li *ngIf="headerInfo.properties.home.visible" class="nav-item active" (click)="setHome($event,'home')" >
-              <a class="nav-link waves-light" mdbWavesEffect   >{{headerInfo.properties.home.title}}<span class="sr-only">(current)</span></a>
-            </li>
-            <li *ngIf="headerInfo.properties.listing.visible" class="nav-item" (click)="setHome($event,'listing')" >
-              <a class="nav-link waves-light" mdbWavesEffect   >{{headerInfo.properties.listing.title}}</a>
-            </li>
-           <!-- for loop start -->
-           <li *ngFor="let link of headerInfo.fieldsets.fields;let i= index;">
-             test
-             {{link[i]}}
-           </li> 
-      
-           
-      
-          </ul>
-          <!-- Links -->
-      
-          <ul class="navbar-nav ml-auto nav-flex-icons">
-            <li class="nav-item">
-              <a class="nav-link">
-                <mdb-icon fab icon="twitter"></mdb-icon>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link">
-                <mdb-icon fab icon="google-plus"></mdb-icon>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link">
-                <div class="btn-group" mdbDropdown>
-                  <mdb-icon fas icon="user" mdbDropdownToggle></mdb-icon>
-                  <div class="dropdown-menu dropdown-menu-right dropdown-primary">
-                    <a class="dropdown-item" href="#">Action</a>
-                    <a class="dropdown-item" href="#">Another action</a>
-                    <a class="dropdown-item" href="#">Something else here</a>
-                    <div class="divider dropdown-divider"></div>
-                    <a class="dropdown-item" href="#">Separated link</a>
-                  </div>
-                </div>
-              </a>
-            </li>
-          </ul>
-        </links>
-        <!-- Collapsible content -->
-      
-      </mdb-navbar>
+		<!-- Navbar brand -->
+		<mdb-navbar-brand><a class="navbar-brand" href="#" (click)="setHome($event,'home')">{{headerInfo.sitetitle}}</a>
+		</mdb-navbar-brand>
+
+		<!-- Collapsible content -->
+		<links>
+
+			<!-- Links -->
+			<ul class="navbar-nav mr-auto">
+				<li *ngIf="headerInfo.properties.home.visible" class="nav-item active" (click)="setHome($event,'home')">
+					<a class="nav-link waves-light"
+						mdbWavesEffect>{{headerInfo.properties.home.title}}<span class="sr-only">(current)</span></a>
+				</li>
+				<li *ngIf="headerInfo.properties.listing.visible" class="nav-item" (click)="setHome($event,'listing')">
+					<a class="nav-link waves-light" mdbWavesEffect>{{headerInfo.properties.listing.title}}</a>
+				</li>
+			</ul>
+
+			<ul class="navbar-nav mr-auto">
+				<li *ngFor="let item of headerInfo.fields; let i = index" [attr.data-index]="i" class="nav-item active" (click)="setHome($event,item.attributeid)">
+          	<a class="nav-link waves-light" mdbWavesEffect>{{item.title}}</a>
+					<!-- {{ item.title }} -->
+				</li>
+			</ul>
+			<!-- Links -->
+
+			<ul class="navbar-nav ml-auto nav-flex-icons">
+				<li class="nav-item">
+					<a class="nav-link">
+						<mdb-icon fab icon="twitter"></mdb-icon>
+					</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link">
+						<mdb-icon fab icon="google-plus"></mdb-icon>
+					</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link">
+						<div class="btn-group" mdbDropdown>
+							<mdb-icon fas icon="user" mdbDropdownToggle></mdb-icon>
+							<div class="dropdown-menu dropdown-menu-right dropdown-primary">
+								<a class="dropdown-item" href="#">Action</a>
+								<a class="dropdown-item" href="#">Another action</a>
+								<a class="dropdown-item" href="#">Something else here</a>
+								<div class="divider dropdown-divider"></div>
+								<a class="dropdown-item" href="#">Separated link</a>
+							</div>
+						</div>
+					</a>
+				</li>
+			</ul>
+		</links>
+		<!-- Collapsible content -->
+
+	</mdb-navbar>
 
 </div>
-<ul>
-  <li>hello</li>
-  <!-- <ng-container *ngFor="link of headerInfo.fieldsets.fields;let i= index;">
-   <li >
-             test
-             {{link[i]}}
-           </li> 
-  </ng-container> -->
-</ul>
-<ul>
-    <li *ngFor="let item of headerInfo.fields; let i = index" [attr.data-index]="i">
-        {{ item }}
-    </li>
-</ul>
 
-      <!--/.Navbar-->
+
+<!--/.Navbar-->

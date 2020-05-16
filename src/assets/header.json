@@ -1,62 +1,64 @@
-
-  {
-      "widget":"menu",
-      "sitetitle": "Vending Machines",
-      "mainheading": "Angular Dynamic Schema model- demo - syed",
-      "fieldsets":[
-         {
-            "fields":[
-               "home",
-               "listing"
-            ],
-            "itemwidths":[
-               "10em",
-               "20em"
-            ]
-         }
+{
+  "widget": "menu",
+  "sitetitle": "Vending Machines",
+  "mainheading": "Angular Dynamic Schema model- demo - syed",
+  "fieldsets": [
+    {
+      "fields": [
+        "home",
+        "listing"
       ],
-      "status":"active",
-      "description":"This is the main menu",
-      "id":801,
-      "settings": {
-        "mainbar" : {
-          "backgroundclass": "navbar-red",
-          "setbackground": false
-        }
-      },
-      "properties":{
-         "home":{
-            "widget":"menuitem",
-            "title":"Home",
-            "itemtype":"text",
-            "linkurl":"#",
-            "itemwidth":"12em",
-            "visible": true
-         },
-         "listing":{
-            "widget":"menuitem",
-            "title":"Listing",
-            "itemtype":"text",
-            "linkurl":"#",
-            "itemwidth":"12em",
-            "visible": true
-         }
-        },
-         "fields":[
-               {"widget":"menuitem",
-            "title":"Home",
-            "itemtype":"text",
-            "linkurl":"#",
-            "itemwidth":"12em",
-            "visible": true},
-            {
-               "widget":"menuitem",
-            "title":"Listings",
-            "itemtype":"text",
-            "linkurl":"#",
-            "itemwidth":"12em",
-            "visible": true
-            }
-            ]
-       
-   }
+      "itemwidths": [
+        "10em",
+        "20em"
+      ]
+    }
+  ],
+  "status": "active",
+  "description": "This is the main menu",
+  "id": 801,
+  "settings": {
+    "mainbar": {
+      "backgroundclass": "navbar-red",
+      "setbackground": false
+    }
+  },
+  "properties": {
+    "home": {
+      "widget": "menuitem",
+      "title": "Home",
+      "itemtype": "text",
+      "linkurl": "#",
+      "itemwidth": "12em",
+      "visible": true
+    },
+    "listing": {
+      "widget": "menuitem",
+      "title": "Listing",
+      "itemtype": "text",
+      "linkurl": "#",
+      "itemwidth": "12em",
+      "visible": true
+    }
+  },
+  "fields": [
+    {
+      "widget": "menuitem",
+      "title": "Home",
+      "attributeid": "home",
+      "itemtype": "text",
+      "linkurl": "#",
+      "itemwidth": "12em",
+      "visible": true
+    },
+    {
+      "widget": "menuitem",
+      "title": "Listings",
+      "attributeid": "listing",
+      "itemtype": "text",
+      "linkurl": "#",
+      "itemwidth": "12em",
+      "visible": true
+    }
+  ]
+}
