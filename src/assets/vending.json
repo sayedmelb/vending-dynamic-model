@@ -7,6 +7,8 @@
    "status":"active",
    "description":"This is the vending area",
    "id":802,
+   "cashsectiontitle": "Cash section",
+   "cardsectiontitle": "Card section",
    "settings":{
       "mainbar":{
          "backgroundclass":"navbar-red",

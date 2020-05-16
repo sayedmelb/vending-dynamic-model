@@ -58,16 +58,14 @@
 
 										</div>
 										<div class="row">
-											<div class="col-6"><button class="btn-primary pad-right" (click)="onPaymentModeSelection('cash') ">Cash
-                  payment</button><button class="btn-success" (click)="onPaymentModeSelection('card') ">Card
-                  payment</button></div>
+											<div class="col-6"><button class="btn-primary pad-right" (click)="onPaymentModeSelection('cash') ">{{vendingData?.cashtitle}}</button><button class="btn-success" (click)="onPaymentModeSelection('card') ">{{vendingData?.cardtitle}}</button></div>
 											<div class="col-6"></div>
 										</div>
 									</div>
 									<div class="col-12 " *ngIf="cashPayment">
 										<div class=" row info-container-cash">
 											<div class="col-12">
-												<h4>Cash Section</h4>
+												<h4>{{vendingData?.cashsectiontitle}}</h4>
 												<div class="row light-border-top">
 													<div class="col-3 " (click)="addToBalance($event,0.05)">
 														<div class="dv-button">5c</div>
@@ -130,7 +128,7 @@
 									<div class="col-12" *ngIf="cardPayment">
 										<div class=" row info-container-card">
 											<div class="col-12">
-												<h4>Card Section</h4>
+												<h4>{{vendingData?.cardsectiontitle}}</h4>
 												<div class="row light-border-top">
 
 													<div *ngFor="let item of items; let i = index" class="col-3 "
