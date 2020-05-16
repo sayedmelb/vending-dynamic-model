@@ -1,7 +1,7 @@
 <nav-bar (navstatus)="OnNavBarClicked($event)" [headerInfo]="headerData"></nav-bar>
 <div class="container-fluid"> 
   <ng-container *ngIf="navtoggle=='home' ">
-    <h1 *ngIf="headerData.settings.mainheading.visible" class="header"  [ngStyle]="{'color': headerData.settings.mainheading.iscolorcode? headerData.settings.mainheading.colorcode:null} "  >
+    <h1 *ngIf="headerData.settings.mainheading.visible" class="header"  [ngStyle]="{'color': headerData.settings.mainheading.colorcode} "  >
       {{headerData.mainheading}}
     </h1>
     <p>
