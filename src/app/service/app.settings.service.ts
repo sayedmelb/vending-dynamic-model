@@ -11,6 +11,7 @@ import { VendingData} from '../model/vending.data';
 export class AppSettingsService {
   url = "./assets/data.json";
   urlheader = "./assets/header.json";
+    urlvending = "./assets/vending.json";
   constructor(private http: HttpClient) {
     this.getJSON().subscribe(data => {});
     this.getHeaderJSON().subscribe(data => {});
@@ -25,6 +26,6 @@ export class AppSettingsService {
     return this.http.get<HeaderData[]>(this.urlheader);
   }
   public getVendingJSON(): Observable<VendingData[]> {
-    return this.http.get<VendingData[]>(this.urlheader);
+    return this.http.get<VendingData[]>(this.urlvending);
   }
 }
