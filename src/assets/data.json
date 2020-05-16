@@ -1,5 +1,36 @@
 {
    "widget":"listing",
+   "schema": {
+      "fields":[
+      {
+         "widget":"column",
+         "title":"Home",
+         "attributeid":"home",
+         "itemtype":"text",
+         "linkurl":"#",
+         "itemwidth":"12em",
+         "visible":true
+      },
+      {
+         "widget":"column",
+         "title":"Listings",
+         "attributeid":"listing",
+         "itemtype":"text",
+         "linkurl":"#",
+         "itemwidth":"12em",
+         "visible":true
+      },
+      {
+         "widget":"column",
+         "title":"Admin",
+         "attributeid":"Admin",
+         "itemtype":"text",
+         "linkurl":"#",
+         "itemwidth":"12em",
+         "visible":true
+      }
+   ]
+   },
 "products":[
     {"lat": -27.81938219, "lng": 152.38865828, "status": 1, "description": "40-60 percent", "id": 1001,
         "products" :[{

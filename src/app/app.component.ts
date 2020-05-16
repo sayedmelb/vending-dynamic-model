@@ -158,7 +158,7 @@ export class AppComponent implements OnInit, AfterViewInit {
     let lat: number, lng: number, icon: string, status: number = 0, products: [];
     let newObj;
 
-    _.forEach(mapData, mapdata => {
+    _.forEach(mapData.products, mapdata => {
 
       lat = mapdata.lat;
       lng = mapdata.lng;
