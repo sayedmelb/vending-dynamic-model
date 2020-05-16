@@ -12,37 +12,34 @@
     <div class="row light-shade">
 
       <div class="col-12">
-        <h3>Details</h3>
+      
+        <h3> {{headerData.detailssection.heading}}</h3>
       </div>
 
-      <div class="col-3 ">Machines having 80 percent and above stock: </div>
+      <div class="col-3 "> {{headerData.detailssection.legend1}}  </div>
       <div class="col-1 "> <img class="custom-icon" src="{{imggithubpath}}green.png{{imgpathsuffice}}" />
       </div>
       <div class="col-2  "></div>
-      <div class="col-3 ">Machines having 60 - 80 percent stock:</div>
+      <div class="col-3 "> {{headerData.detailssection.legend2}} </div>
       <div class="col-1  "> <img class="custom-icon"   src="{{imggithubpath}}violet.png{{imgpathsuffice}}"  /> </div>
       <div class="col-2  "></div>
 
 
       <div class="col-12">&nbsp;</div>
 
-      <div class="col-3 ">Machhines having 20 - 40 percent stock: </div>
+      <div class="col-3 "> {{headerData.detailssection.legend3}}</div>
       <div class="col-1 "> <img class="custom-icon"  src="{{imggithubpath}}warning.png{{imgpathsuffice}}"  />
       </div>
       <div class="col-2  "></div>
-      <div class="col-3 ">Machines having below 20 percent stock:</div>
+      <div class="col-3 "> {{headerData.detailssection.legend4}} </div>
       <div class="col-1  "> <img class="custom-icon"  src="{{imggithubpath}}danger.png{{imgpathsuffice}}"  /> </div>
       <div class="col-2  "></div>
 
       <div class="col-12">&nbsp;</div>
-      <div class="col-12"><p>The polygon on the map is indicating a Mall area in google Map.<br>
-        Steps to use the vending machine -><br>
-        1. Choose a machine location from google map <br>
-        2. Click on Cash / Card payment<br>
-        3. Click on Done/ Authorise to add amount to the machine<br>
-        4. Click on can buttons to dispense <br>
-        5. Click on Return fund button to return available fund in machine and start process again.<br>
-      </p></div>
+      <div class="col-12">
+        <span [innerHtml]="headerData.detailssection.summary"></span>
+       
+      </div>
       <div class="col-12" style="background-color: orange;" *ngIf="errorStatus">
         <h3>Important Message</h3>
         <p>
