@@ -58,5 +58,19 @@
       </mdb-navbar>
 
 </div>
+<ul>
+  <li>hello</li>
+  <!-- <ng-container *ngFor="link of headerInfo.fieldsets.fields;let i= index;">
+   <li >
+             test
+             {{link[i]}}
+           </li> 
+  </ng-container> -->
+</ul>
+<ul>
+    <li *ngFor="let item of headerInfo.fieldsets.fields; let i = index" [attr.data-index]="i">
+        {{ item[i] }}
+    </li>
+</ul>
 
       <!--/.Navbar-->
