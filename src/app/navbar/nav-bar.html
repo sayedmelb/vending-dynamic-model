@@ -15,10 +15,10 @@
             <li *ngIf="headerInfo.properties.listing.visible" class="nav-item" (click)="setHome($event,'listing')" >
               <a class="nav-link waves-light" mdbWavesEffect   >{{headerInfo.properties.listing.title}}</a>
             </li>
-           <!-- for loop start
+           <!-- for loop start -->
            <li *ngFor="let link of headerInfo.properties">
-
-           </li> -->
+             {{link[0].title}}
+           </li> 
       
            
       
