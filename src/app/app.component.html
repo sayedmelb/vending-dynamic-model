@@ -126,8 +126,8 @@
 											<!-- new section -->
 											<div class="col-12">
 												<div class="row light-border-top">
-													<div class="col-3 " (click)="addToBalance($event,0.05)">
-														<div class="dv-button">5c</div>
+													<div *ngFor="let item of vendingData.cashfields" class="col-3 " (click)="addToBalance($event,item.value)">
+														<div class="dv-button">{{item.title}}</div>
 													</div>
 												</div>
 											</div>
