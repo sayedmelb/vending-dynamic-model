@@ -127,10 +127,13 @@
 											<div class="col-12">
 												<h4>{{vendingData?.cashsectiontitle}}</h4>
 												<div class="row light-border-top">
-													<div *ngFor="let item of vendingData.cashfields" class="col-3 "
-														(click)="addToBalance($event,item.value)">
-														<div class="dv-button">{{item.title}}</div>
-													</div>
+													<ng-container *ngFor="let item of vendingData.cashfields">
+														<div *ngIf="item.visible" class="col-3 "
+															(click)="addToBalance($event,item.value)">
+															<div class="dv-button">{{item.title}}
+															</div>
+														</div>
+													</ng-container>
 													<div class="col-6 ">
 														<div class="dv-amount">Amount
 															{{ balanceAmount |  currency:'USD':true:'2.2-4'}}</div>
@@ -190,7 +193,7 @@
 									<div class="col-12" *ngIf="!showVendingMc">
 										<div class="row pr-2 pl-2">
 											<div class="col-12  info-message">
-												<h4>Select Vending machine from map below of Mall to start</h4>
+												<h4>{{vendingData?.infomessage}}</h4>
 											</div>
 										</div>
 

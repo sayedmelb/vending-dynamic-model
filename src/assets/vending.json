@@ -23,6 +23,7 @@
    },
    "fundAvailable" : "Making your cash available to machine wait...",
    "fundAvailablesuccess": "All Good , start selecting your item ",
+   "infomessage": "Select Vending machine from map below of Mall to start",
    
    "cashfields":[
       {
