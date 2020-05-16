@@ -58,7 +58,9 @@
 
 										</div>
 										<div class="row">
-											<div class="col-6"><button class="btn-primary pad-right" (click)="onPaymentModeSelection('cash') ">{{vendingData?.cashtitle}}</button><button class="btn-success" (click)="onPaymentModeSelection('card') ">{{vendingData?.cardtitle}}</button></div>
+											<div class="col-6">
+												<button class="btn-primary pad-right" (click)="onPaymentModeSelection('cash') ">{{vendingData?.cashtitle}}</button><button class="btn-success" (click)="onPaymentModeSelection('card') ">{{vendingData?.cardtitle}}</button>
+											</div>
 											<div class="col-6"></div>
 										</div>
 									</div>
@@ -121,6 +123,15 @@
 														item </div>
 												</div>
 											</div>
+											<!-- new section -->
+											<div class="col-12">
+												<div class="row light-border-top">
+													<div class="col-3 " (click)="addToBalance($event,0.05)">
+														<div class="dv-button">5c</div>
+													</div>
+												</div>
+											</div>
+											<!-- end new section-->
 
 										</div>
 
