@@ -38,7 +38,7 @@
 							<img class="custom-icon"  src="{{imggithubpath}}danger.png{{imgpathsuffice}}"  /> </div>
 							<div class="col-2  "></div>
 
-						
+
 							<div class="col-12 pt-3">
 								<span [innerHtml]="headerData?.detailssection?.summary"></span>
 
@@ -54,8 +54,8 @@
 								<div class="row">
 									<div class="col-12  " *ngIf="!paymentSelected">
 										<div class="info-container">
-                      {{vendingData?.mainsummary}}
-											
+											{{vendingData?.mainsummary}}
+
 										</div>
 										<div class="row">
 											<div class="col-6"><button class="btn-primary pad-right" (click)="onPaymentModeSelection('cash') ">Cash
