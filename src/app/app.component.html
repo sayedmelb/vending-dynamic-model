@@ -3,10 +3,10 @@
 	<ng-container *ngIf="navtoggle=='home' ">
 		<h1 *ngIf="headerData?.settings?.mainheading?.visible" class="header"
 			[ngStyle]="{'color': headerData.settings.mainheading.colorcode} ">
-			{{headerData.mainheading}}
+			{{headerData?.mainheading}}
 		</h1>
 		<p>
-			{{headerData.mainsummary}}
+			{{headerData?.mainsummary}}
 		</p>
 		<img class="img-align"  src="{{imggithubpath}}vendingmc.png{{imgpathsuffice}}"  />
 
@@ -17,11 +17,11 @@
 				<h3> {{headerData?.detailssection?.heading}}</h3>
 			</div>
 
-			<div class="col-3 "> {{headerData.detailssection.legend1}} </div>
+			<div class="col-3 "> {{headerData?.detailssection?.legend1}} </div>
 			<div class="col-1 "> <img class="custom-icon" src="{{imggithubpath}}green.png{{imgpathsuffice}}" />
       </div>
 				<div class="col-2  "></div>
-				<div class="col-3 "> {{headerData.detailssection.legend2}} </div>
+				<div class="col-3 "> {{headerData?.detailssection?.legend2}} </div>
 				<div class="col-1  ">
 					<img class="custom-icon"   src="{{imggithubpath}}violet.png{{imgpathsuffice}}"  /> </div>
 					<div class="col-2  "></div>
@@ -29,18 +29,18 @@
 
 					<div class="col-12">&nbsp;</div>
 
-					<div class="col-3 "> {{headerData.detailssection.legend3}}</div>
+					<div class="col-3 "> {{headerData?.detailssection?.legend3}}</div>
 					<div class="col-1 "> <img class="custom-icon"  src="{{imggithubpath}}warning.png{{imgpathsuffice}}"  />
       </div>
 						<div class="col-2  "></div>
-						<div class="col-3 "> {{headerData.detailssection.legend4}} </div>
+						<div class="col-3 "> {{headerData?.detailssection?.legend4}} </div>
 						<div class="col-1  ">
 							<img class="custom-icon"  src="{{imggithubpath}}danger.png{{imgpathsuffice}}"  /> </div>
 							<div class="col-2  "></div>
 
 						
 							<div class="col-12 pt-3">
-								<span [innerHtml]="headerData.detailssection.summary"></span>
+								<span [innerHtml]="headerData?.detailssection?.summary"></span>
 
 							</div>
 							<div class="col-12" style="background-color: orange;" *ngIf="errorStatus">
