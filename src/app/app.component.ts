@@ -77,6 +77,7 @@ export class AppComponent implements OnInit, AfterViewInit {
   ngOnInit() {
     this.urlheader();
     this.getData();
+    this.getVendingData();
 
   }
   ngAfterViewInit() {
