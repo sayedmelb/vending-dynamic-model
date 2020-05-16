@@ -33,7 +33,7 @@
       },
       "mainheading":{
          "visible":true,
-         "colorcode":"green",
+         "colorcode":"",
          "iscolorcode":true
       }
    },
