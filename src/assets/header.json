@@ -41,6 +41,22 @@
             "itemwidth":"12em",
             "visible": true
          }
-        }
+        },
+         "fields":[
+               {"widget":"menuitem",
+            "title":"Home",
+            "itemtype":"text",
+            "linkurl":"#",
+            "itemwidth":"12em",
+            "visible": true},
+            {
+               "widget":"menuitem",
+            "title":"Listings",
+            "itemtype":"text",
+            "linkurl":"#",
+            "itemwidth":"12em",
+            "visible": true
+            }
+            ]
        
    }
