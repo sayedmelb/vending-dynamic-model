@@ -3,7 +3,7 @@ import { HttpClient } from "@angular/common/http";
 import { Observable } from "rxjs";
 import { MachineData } from "../model/machine.data";
 import { HeaderData } from "../model/header.data";
-//import { VendingData } from "../model/vending.data";
+import { VendingData } from "../model/vending.data";
 
 @Injectable({
   providedIn: "root"
@@ -15,7 +15,7 @@ export class AppSettingsService {
   constructor(private http: HttpClient) {
     this.getJSON().subscribe(data => {});
     this.getHeaderJSON().subscribe(data => {});
-   // this.getVendingJSON().subscribe(data => {});
+    this.getVendingJSON().subscribe(data => {});
   }
 
   public getJSON(): Observable<MachineData[]> {
@@ -25,7 +25,7 @@ export class AppSettingsService {
   public getHeaderJSON(): Observable<HeaderData[]> {
     return this.http.get<HeaderData[]>(this.urlheader);
   }
-  // public getVendingJSON(): Observable<VendingData[]> {
-  //   return this.http.get<VendingData[]>(this.urlvending);
-  // }
+  public getVendingJSON(): Observable<VendingData[]> {
+    return this.http.get<VendingData[]>(this.urlvending);
+  }
 }

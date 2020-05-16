@@ -52,7 +52,7 @@ export class AppComponent implements OnInit, AfterViewInit {
   errorStatus = false;
   errorMessage = "";
   headerData = {};
- // vendingData = {};
+  vendingData = {};
   
 
     imggithubpath: string = "https://github.com/sayedmelb/energysyed/blob/master/src/assets/images/";
@@ -77,7 +77,7 @@ export class AppComponent implements OnInit, AfterViewInit {
   ngOnInit() {
     this.urlheader();
     this.getData();
-   // this.getVendingData();
+    this.getVendingData();
 
   }
   ngAfterViewInit() {
@@ -121,22 +121,22 @@ export class AppComponent implements OnInit, AfterViewInit {
 
   }
 
-  // getVendingData() {
-  //   this.appSettingsService.getVendingJSON().subscribe(data => {
-  //     this.vendingData = data;
+  getVendingData() {
+    this.appSettingsService.getVendingJSON().subscribe(data => {
+      this.vendingData = data;
      
 
-  //   },
-  //     err => {
-  //       console.log("http error", err);
-  //       this.errorStatus = true;
-  //       this.errorMessage = err.message;
+    },
+      err => {
+        console.log("http error", err);
+        this.errorStatus = true;
+        this.errorMessage = err.message;
 
-  //     }
+      }
 
-  //   );
+    );
 
-  // }
+  }
 
 
 
