@@ -19,7 +19,7 @@
       "mainbar":{
          "backgroundclass":"navbar-red",
          "setbackground":false,
-         "visible": false
+         "visible": true
       },
       "mainheading":{
          "visible":true,
