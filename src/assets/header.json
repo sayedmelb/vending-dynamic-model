@@ -18,6 +18,12 @@
       "status":"active",
       "description":"This is the main menu",
       "id":801,
+      "settings": {
+        "mainbar" : {
+          "backgroundclass": "navbar-red",
+          "setbackground": true
+        }
+      },
       "properties":{
          "home":{
             "widget":"menuitem",
