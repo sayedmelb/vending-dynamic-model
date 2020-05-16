@@ -12,7 +12,7 @@
 			<ul class="navbar-nav mr-auto">
 				<li *ngFor="let item of headerInfo.fields; let i = index" [attr.data-index]="i" class="nav-item active"
 					(click)="setHome($event,item.attributeid)">
-					<a class="nav-link waves-light" mdbWavesEffect>{{item.title}}</a>
+					<a *ngIf="item.visible === true" class="nav-link waves-light" mdbWavesEffect>{{item.title}}</a>
 
 				</li>
 			</ul>
