@@ -1,8 +1,7 @@
 {
    "widget":"menu",
    "subtitle":"Vending Machine Section",
-   "mainheading":"Angular Dynamic Schema model- demo - syed",
-   "mainsummary":"This is a Vending Machine Application with the following update below",
+   "mainsummary":"Select Vending machine from map below of Mall to start",
   
    "detailssection":{
       "heading":"Details",

@@ -50,12 +50,12 @@
 								</p>
 							</div>
 							<div class="col-12 machine-section">
-								<h3> {{vendingData?.subtitle}} Vending Machine Section</h3>
+								<h3> {{vendingData?.subtitle}}</h3>
 								<div class="row">
 									<div class="col-12  " *ngIf="!paymentSelected">
 										<div class="info-container">
-											Use either the Cash or card section below to topup and use the vending
-											machine
+                      {{vendingData?.mainsummary}}
+											
 										</div>
 										<div class="row">
 											<div class="col-6"><button class="btn-primary pad-right" (click)="onPaymentModeSelection('cash') ">Cash
