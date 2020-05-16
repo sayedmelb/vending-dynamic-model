@@ -53,6 +53,7 @@ export class AppComponent implements OnInit, AfterViewInit {
   errorMessage = "";
   headerData = {};
   vendingData = {};
+  listingHeaders = [];
   
 
     imggithubpath: string = "https://github.com/sayedmelb/energysyed/blob/master/src/assets/images/";
@@ -152,7 +153,7 @@ export class AppComponent implements OnInit, AfterViewInit {
 
   normalizeData(mapData: any) {
 
-
+this.listingHeaders = mapData;
 
     let positions = [];
     let lat: number, lng: number, icon: string, status: number = 0, products: [];

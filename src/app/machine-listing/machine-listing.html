@@ -4,11 +4,14 @@
       <table class="table table-striped">
           <thead>
             <tr>
-              <th width="100">Machine Id</th>
+              <ng-container *ngFor="let field of listingHeaders.schema.fields">
+                <th *ngIf="field.visible" width="100"> {{field.title}}</th>
+              </ng-container>
+              <!-- <th width="100">Machine Id</th>
               <th width="100">Latitude</th>
               <th width="100">Longitute</th>
               <th width="100">Status</th>
-              <th width="100">Description</th>
+              <th width="100">Description</th> -->
     
             </tr>
           </thead>

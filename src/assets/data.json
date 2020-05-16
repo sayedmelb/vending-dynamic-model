@@ -9,7 +9,8 @@
          "itemtype":"number",
          "linkurl":"#",
          "itemwidth":"12em",
-         "visible":true
+         "visible":true,
+         "fieldid":"id"
       },
       {
          "widget":"column",
@@ -18,7 +19,8 @@
          "itemtype":"string",
          "linkurl":"#",
          "itemwidth":"12em",
-         "visible":true
+         "visible":false,
+         "fieldid":"lat"
       },
       {
          "widget":"column",
@@ -27,7 +29,8 @@
          "itemtype":"string",
          "linkurl":"#",
          "itemwidth":"12em",
-         "visible":true
+         "visible":true,
+         "fieldid":"lng"
       },
        {
          "widget":"column",
@@ -36,7 +39,8 @@
          "itemtype":"image",
          "linkurl":"#",
          "itemwidth":"12em",
-         "visible":true
+         "visible":true,
+         "fieldid":"icon"
       },
         {
          "widget":"column",
@@ -45,7 +49,8 @@
          "itemtype":"string",
          "linkurl":"#",
          "itemwidth":"12em",
-         "visible":true
+         "visible":true,
+         "fieldid":"desc"
       },
        {
          "widget":"column",
@@ -54,7 +59,8 @@
          "itemtype":"date",
          "linkurl":"#",
          "itemwidth":"12em",
-         "visible":false
+         "visible":false,
+         "fieldid":"lastservice"
       }
    ]
    },

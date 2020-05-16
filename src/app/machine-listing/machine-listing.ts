@@ -9,6 +9,7 @@ import { Component, OnInit, ViewChild, Injectable, Output, EventEmitter, Input }
 })
 export class MachineListing implements OnInit {
  @Input("listing") listing: any;
+ @Input("listingHeaders") listingHeaders: any;
   
 
 
