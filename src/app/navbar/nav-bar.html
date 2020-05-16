@@ -16,8 +16,9 @@
               <a class="nav-link waves-light" mdbWavesEffect   >{{headerInfo.properties.listing.title}}</a>
             </li>
            <!-- for loop start -->
-           <li *ngFor="let link of headerInfo.properties">
-             {{link[0].title}}
+           <li *ngFor="let link of headerInfo.fieldsets.fields;let i= index;">
+             test
+             {{link[i]}}
            </li> 
       
            
