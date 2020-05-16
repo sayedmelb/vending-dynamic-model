@@ -4,30 +4,57 @@
       "fields":[
       {
          "widget":"column",
-         "title":"Home",
-         "attributeid":"home",
-         "itemtype":"text",
+         "title":"Machine Id",
+         "attributeid":"1",
+         "itemtype":"number",
          "linkurl":"#",
          "itemwidth":"12em",
          "visible":true
       },
       {
          "widget":"column",
-         "title":"Listings",
-         "attributeid":"listing",
-         "itemtype":"text",
+         "title":"Latitude",
+         "attributeid":"2",
+         "itemtype":"string",
          "linkurl":"#",
          "itemwidth":"12em",
          "visible":true
       },
       {
          "widget":"column",
-         "title":"Admin",
-         "attributeid":"Admin",
-         "itemtype":"text",
+         "title":"Longitude",
+         "attributeid":"3",
+         "itemtype":"string",
          "linkurl":"#",
          "itemwidth":"12em",
          "visible":true
+      },
+       {
+         "widget":"column",
+         "title":"Status",
+         "attributeid":"4",
+         "itemtype":"image",
+         "linkurl":"#",
+         "itemwidth":"12em",
+         "visible":true
+      },
+        {
+         "widget":"column",
+         "title":"Description",
+         "attributeid":"5",
+         "itemtype":"string",
+         "linkurl":"#",
+         "itemwidth":"12em",
+         "visible":true
+      },
+       {
+         "widget":"column",
+         "title":"Last Service",
+         "attributeid":"5",
+         "itemtype":"date",
+         "linkurl":"#",
+         "itemwidth":"12em",
+         "visible":false
       }
    ]
    },

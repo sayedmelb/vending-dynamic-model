@@ -17,6 +17,8 @@ export class MachineListing implements OnInit {
   }
 
   ngOnInit() {
+
+    console.log('maching listing', this.listing);
     
   }
 
