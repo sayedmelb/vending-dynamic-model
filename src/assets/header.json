@@ -3,18 +3,7 @@
    "sitetitle":"Vending Machines",
    "mainheading":"Angular Dynamic Schema model- demo - syed",
    "mainsummary":"This is a Vending Machine Application with the following update below",
-   "fieldsets":[
-      {
-         "fields":[
-            "home",
-            "listing"
-         ],
-         "itemwidths":[
-            "10em",
-            "20em"
-         ]
-      }
-   ],
+  
    "detailssection":{
       "heading":"Details",
       "legend1":"Machines having 80 percent and above stock:",
@@ -29,7 +18,8 @@
    "settings":{
       "mainbar":{
          "backgroundclass":"navbar-red",
-         "setbackground":false
+         "setbackground":false,
+         "visible": false
       },
       "mainheading":{
          "visible":true,
@@ -37,24 +27,7 @@
          "iscolorcode":true
       }
    },
-   "properties":{
-      "home":{
-         "widget":"menuitem",
-         "title":"Home",
-         "itemtype":"text",
-         "linkurl":"#",
-         "itemwidth":"12em",
-         "visible":true
-      },
-      "listing":{
-         "widget":"menuitem",
-         "title":"Listing",
-         "itemtype":"text",
-         "linkurl":"#",
-         "itemwidth":"12em",
-         "visible":true
-      }
-   },
+   
    "fields":[
       {
          "widget":"menuitem",

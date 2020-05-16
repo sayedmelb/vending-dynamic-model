@@ -1,4 +1,4 @@
-<div class="colx" [ngClass]="{'navbar-red' : headerInfo?.settings?.mainbar?.setbackground === true }">
+<div *ngIf="headerInfo?.settings?.mainbar?.visible" class="colx" [ngClass]="{'navbar-red' : headerInfo?.settings?.mainbar?.setbackground === true }">
 	<mdb-navbar SideClass="navbar navbar-expand-lg navbar-dark unique-color " [containerInside]="true">
 
 		<!-- Navbar brand -->
