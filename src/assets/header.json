@@ -25,7 +25,7 @@
     "mainheading": {
       "visible": true,
       "colorcode": "#000",
-      "iscolorcode": true
+      "iscolorcode": false
     }
   },
   "properties": {
