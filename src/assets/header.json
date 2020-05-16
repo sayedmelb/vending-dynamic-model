@@ -2,6 +2,7 @@
   "widget": "menu",
   "sitetitle": "Vending Machines",
   "mainheading": "Angular Dynamic Schema model- demo - syed",
+  "mainsummary": "This is a Vending Machine Application with the following update below",
   "fieldsets": [
     {
       "fields": [
