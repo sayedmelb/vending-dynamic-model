@@ -1,4 +1,4 @@
-<div class="colx" [ngClass]="{'navbar-red' : headerInfo.settings.mainbar.setbackground === true }">
+<div class="colx" [ngClass]="{'navbar-red' : headerInfo?.settings?.mainbar?.setbackground === true }">
 	<mdb-navbar SideClass="navbar navbar-expand-lg navbar-dark unique-color " [containerInside]="true">
 
 		<!-- Navbar brand -->
@@ -9,7 +9,7 @@
 		<links>
 
 			<!-- Links -->
-			<ul class="navbar-nav mr-auto">
+			<!-- <ul class="navbar-nav mr-auto">
 				<li *ngIf="headerInfo.properties.home.visible" class="nav-item active" (click)="setHome($event,'home')">
 					<a class="nav-link waves-light"
 						mdbWavesEffect>{{headerInfo.properties.home.title}}<span class="sr-only">(current)</span></a>
@@ -17,12 +17,12 @@
 				<li *ngIf="headerInfo.properties.listing.visible" class="nav-item" (click)="setHome($event,'listing')">
 					<a class="nav-link waves-light" mdbWavesEffect>{{headerInfo.properties.listing.title}}</a>
 				</li>
-			</ul>
+			</ul> -->
 
 			<ul class="navbar-nav mr-auto">
 				<li *ngFor="let item of headerInfo.fields; let i = index" [attr.data-index]="i" class="nav-item active" (click)="setHome($event,item.attributeid)">
           	<a class="nav-link waves-light" mdbWavesEffect>{{item.title}}</a>
-					<!-- {{ item.title }} -->
+					
 				</li>
 			</ul>
 			<!-- Links -->
