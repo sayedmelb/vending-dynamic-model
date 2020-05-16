@@ -21,6 +21,8 @@
          "iscolorcode":true
       }
    },
+   "fundAvailable" : "Making your cash available to machine wait...",
+   "fundAvailablesuccess": "All Good , start selecting your item ",
    
    "cashfields":[
       {
