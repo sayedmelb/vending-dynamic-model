@@ -21,6 +21,9 @@
     "mainbar": {
       "backgroundclass": "navbar-red",
       "setbackground": false
+    },
+    "mainheading": {
+      "visible": false
     }
   },
   "properties": {

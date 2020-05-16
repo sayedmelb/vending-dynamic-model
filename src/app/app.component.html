@@ -1,8 +1,8 @@
 <nav-bar (navstatus)="OnNavBarClicked($event)" [headerInfo]="headerData"></nav-bar>
 <div class="container-fluid"> 
   <ng-container *ngIf="navtoggle=='home' ">
-    <h1 class="header">
-      Vending Machine -  {{headerData.widget}}
+    <h1 *ngIf="headerData.settings.mainheading.visible" class="header">
+      {{headerData.mainheading}}
     </h1>
     <p>
       {{summary}}
