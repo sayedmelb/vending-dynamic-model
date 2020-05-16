@@ -1,7 +1,5 @@
-
-
 export interface VendingData {
-    id?: string;
-    subtitle?: string;
-    }
-   
+  widget?: string;
+  subtitle?: string;
+  id?: number;
+}
