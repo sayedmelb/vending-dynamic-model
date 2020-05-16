@@ -23,7 +23,9 @@
       "setbackground": false
     },
     "mainheading": {
-      "visible": false
+      "visible": true,
+      "colorcode": "#000",
+      "iscolorcode": true
     }
   },
   "properties": {
