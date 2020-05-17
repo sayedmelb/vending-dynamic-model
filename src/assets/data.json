@@ -49,7 +49,7 @@
          "itemtype":"string",
          "linkurl":"#",
          "itemwidth":"12em",
-         "visible":false,
+         "visible":true,
          "fieldid":"desc"
       },
        {
@@ -69,7 +69,7 @@
          "itemtype":"string",
          "linkurl":"#",
          "itemwidth":"12em",
-         "visible":true,
+         "visible":false,
          "fieldid":"servicestatus" 
       }
    ]
