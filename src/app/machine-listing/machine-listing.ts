@@ -25,6 +25,8 @@ export class MachineListing implements OnInit {
   productList = [];
   pObj : any;
 
+  dynmaicProductList = [];
+
   constructor() {}
 
   ngOnInit() {
@@ -95,7 +97,9 @@ let mcid;
       //                           return product.id == record.id;
       //                       });
      let inProgress = _.find(this.pObj, (status)=> {return status.id==mcid});   
-       console.log('inProgress', inProgress);                      
+       console.log('inProgress', inProgress); 
+       this.dynmaicProductList = inProgress.products;  
+       console.log('this.dynmaicProductList', this.dynmaicProductList);                    
   }
 
   asIsOrder(a, b) {
