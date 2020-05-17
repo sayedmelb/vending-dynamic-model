@@ -29,7 +29,7 @@
                             </tr> -->
 								<tr *ngFor="let record of productList">
 									<ng-container *ngFor="let item of record | keyvalue: asIsOrder; let i = index">
-										<td width="200" *ngIf="visbilityTray[item.key]">
+										<td width="200" *ngIf="visbilityTray[item.key]" (click)="getProductListingCard(record)">
 											<span *ngIf="item.key==='icon'" > <img class="custom-icon" [src]= "item.value" /> </span>
 											<span *ngIf="item.key!=='icon'"> {{item.value}}</span>
 										</td>
@@ -44,6 +44,11 @@
 		</table>
 	</div>
 	<div class="col-1"></div>
-
+  
+</div>
+<div class="row">
+  <div class="col-1"></div>
+   <div class="col-10">test</div>
+   <div class="col-1"></div>
 
 </div>

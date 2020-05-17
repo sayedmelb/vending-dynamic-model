@@ -23,55 +23,39 @@ export class MachineListing implements OnInit {
   columnOrderList = {};
 
   productList = [];
+  pObj : any;
 
   constructor() {}
 
   ngOnInit() {
     console.log("MACHINE listing", this.listing);
+    //this.pObj.assign(this.listing);
+    this.setObj();
     this.setVisibilityTray();
     this.setColumnOrder();
   }
+  setObj(){
+    this.pObj = this.listing;
+  }
   setColumnOrder() {
     this.listing.forEach(productObj => {
-      //_.forEach(this.listing, productObj => {
-
-      // console.log("productObj", productObj);
+     
       let new_obj = new Map();
-      //  forEach()
-      //   let locFound = this.listingHeaders.schema.fields.find(fieldObj => {
-      //                               return fieldObj.fieldid == productObj.id;
-      //                           });
+    
 
       _.forEach(this.listingHeaders.schema.fields, field => {
-        // let resource = _.find(productObj, res => {
-        //   return res.id == field.fieldid;
-        // });
-        // var resultObject = this.search(field.fieldid, productObj);
-        //  console.log("resultObject ", productObj);
-        // console.log("field", productObj[field.fieldid]);
+        
         if (productObj[field.fieldid] !== undefined)
           new_obj.set(field.fieldid, productObj[field.fieldid]);
-        //  new_obj[field.fieldid] = productObj[field.fieldid];
       });
+      //new_obj.set('products',productObj[products] )
       this.productList.push(new_obj);
     });
-    console.log("this.productList[0]", this.productList[0]);
-    for (let [key, value] of this.productList[0].entries()) {
-      console.log(key, value);
-    }
-    // _.forEach(this.productList[0], map => {
-    //   console.log("map", map);
-    // });
-
-    // _.forEach(this.listingHeaders.schema.fields, field => {
-    //   console.log("field", field);
-    //   let temp_obj = {};
-    //   temp_obj[field.fieldid] = parseInt(field.attributeid);
-    //   Object.assign(new_obj, temp_obj);
-
-    // });
-    //this.columnOrderList = new_obj;
-    // console.log("columnOrderList", this.columnOrderList);
+    
+    // for (let [key, value] of this.productList[0].entries()) {
+    //   console.log(key, value);
+    // }
+  
   }
 
   search(nameKey, myArray) {
@@ -93,6 +77,25 @@ export class MachineListing implements OnInit {
 
   setHome(navitem: string) {
     // alert (navitem);
+  }
+
+  getProductListingCard(record){
+let mcid;
+//  for (let [key, value] of record.entries()) {
+//       console.log('hello', key, value);
+//       if(key==='id')
+//       mcid= value;
+//     }
+   mcid=record.get("id");
+   console.log('mcid', mcid);
+
+
+    console.log('record', record, this.pObj);
+      //  let tmpProduct = this.listing.products._.find(product => {
+      //                           return product.id == record.id;
+      //                       });
+     let inProgress = _.find(this.pObj, (status)=> {return status.id==mcid});   
+       console.log('inProgress', inProgress);                      
   }
 
   asIsOrder(a, b) {
