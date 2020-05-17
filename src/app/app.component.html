@@ -66,63 +66,7 @@
 									</div>
 									<div class="col-12 " *ngIf="cashPayment">
 										<div class=" row info-container-cash">
-											<!-- <div class="col-12">
-												<h4>{{vendingData?.cashsectiontitle}}</h4>
-												<div class="row light-border-top">
-													<div class="col-3 " (click)="addToBalance($event,0.05)">
-														<div class="dv-button">5c</div>
-													</div>
-													<div class="col-3 " (click)="addToBalance($event,0.10)">
-														<div class="dv-button">10c</div>
-													</div>
-													<div class="col-3 " (click)="addToBalance($event,0.20)">
-														<div class="dv-button">20c</div>
-													</div>
-													<div class="col-3 " (click)="addToBalance($event,0.50)">
-														<div class="dv-button">50c</div>
-													</div>
-													<div class="col-3 " (click)="addToBalance($event,1.00)">
-														<div class="dv-button">$1</div>
-													</div>
-													<div class="col-3 " (click)="addToBalance($event,2.00)">
-														<div class="dv-button">$2</div>
-													</div>
-													<div class="col-3 " (click)="addToBalance($event,5.00)">
-														<div class="dv-button">$5</div>
-													</div>
-													<div class="col-3 " (click)="addToBalance($event,10.00)">
-														<div class="dv-button">$10</div>
-													</div>
-													<div class="col-3 " (click)="addToBalance($event,20.00)">
-														<div class="dv-button">$20</div>
-													</div>
-													<div class="col-3 " (click)="addToBalance($event,50.00)">
-														<div class="dv-button">$50</div>
-													</div>
-													<div class="col-3 " (click)="addToBalance($event,100.00)">
-														<div class="dv-button">$100</div>
-													</div>
-													<div class="col-3 " (click)="addToBalance($event,200.00)">
-														<div class="dv-button">$200</div>
-													</div>
-													<div class="col-3 " (click)="addToBalance($event,500.00)">
-														<div class="dv-button">$500</div>
-													</div>
-													<div class="col-6 ">
-														<div class="dv-amount">Amount
-															{{ balanceAmount |  currency:'USD':true:'2.2-4'}}</div>
-													</div>
-													<div class="col-3">
-														<button class="btn-success" (click)="onDone()">Done</button>
-													</div>
-													<div class="col-12 info-message" *ngIf="fundAvailable">Making your
-														cash available to machine wait...
-													</div>
-													<div class="col-12 info-message-success"
-														*ngIf="fundAvailablesuccess">All Good , start selecting your
-														item </div>
-												</div>
-											</div> -->
+
 											<!-- new section -->
 											<div class="col-12">
 												<h4>{{vendingData?.cashsectiontitle}}</h4>
@@ -257,7 +201,7 @@
 							<div class="row map-shade">
 								<div class="col-12">
 									<input class="mapSearch" placeholder="Filter by machine, status, desc.." autocomplete="off"
-          (keyup)="updateFilter($event)" />&nbsp;
+                  (keyup)="updateFilter($event)" />&nbsp;
 									<button type="button" class="btn btn-primary btn-gap" (click)="clearFilter($event)">Clear filter</button>
 								</div>
 								<div class="col-12">&nbsp;</div>
@@ -271,7 +215,7 @@
 											(initialized$)="onCustomMarkerInit($event, data)">
 
 											<img class="custom-icon" [src]="data.icon" />
-          </custom-marker>
+                    </custom-marker>
 											<polygon [editable]="true" [paths]="paths" [strokeColor]="'#FFC107'"
 												[strokeOpacity]="0.8" [strokeWeight]="2" [fillColor]="'#FFC107'"
 												[fillOpacity]="0.35"></polygon>
@@ -292,7 +236,8 @@
 
 
 	</ng-container>
-	<machine-listing *ngIf="navtoggle=='listing'" [listing]="positions" [listingHeaders]= "listingHeaders"></machine-listing>
+	<machine-listing *ngIf="navtoggle=='listing'" [listing]="positions" [listingHeaders]="listingHeaders">
+	</machine-listing>
 
 </div>
 <div style="height:1rem;">

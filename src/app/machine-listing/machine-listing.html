@@ -27,33 +27,11 @@
                               <td width="200" *ngIf="visbilityTray.icon"><img class="custom-icon" [src]= "record.icon" /></td>
                               <td width="250" *ngIf="visbilityTray.desc">{{record.desc}}</td>
                             </tr> -->
-								<!-- <ng-container *ngFor="let field of listingHeaders.schema.fields">
-                              <tr>
-                                 <ng-container *ngFor="let field of listingHeaders.schema.fields">
-
-                                 </ng-container>
-                              </tr>
-                            </ng-container> -->
-								<!-- <tr *ngFor="let record of listing">
-                              <ng-container *ngFor="let item of record | keyvalue; let i = index">
-                              <td width="200"  >{{item.value}}</td>
-                               </ng-container>
-                            </tr> -->
-								<!-- <tr *ngFor="let record of productList">
-                             
-                              <ng-container *ngFor="let item of record | keyvalue; let i = index">
-                              <td width="200"  >{{item.value}}</td>
-                               </ng-container>
-                            </tr> -->
-
 								<tr *ngFor="let record of productList">
-
 									<ng-container *ngFor="let item of record | keyvalue: asIsOrder; let i = index">
 										<td width="200" *ngIf="visbilityTray[item.key]">
 											<span *ngIf="item.key==='icon'" > <img class="custom-icon" [src]= "item.value" /> </span>
 											<span *ngIf="item.key!=='icon'"> {{item.value}}</span>
-
-
 										</td>
 									</ng-container>
 								</tr>

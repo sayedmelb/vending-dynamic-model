@@ -156,7 +156,7 @@ export class AppComponent implements OnInit, AfterViewInit {
 this.listingHeaders = mapData;
 
     let positions = [];
-    let lat: number, lng: number, icon: string, status: number = 0, products: [];
+    let lat: number, lng: number, icon: string, status: number = 0, products: [], servicestatus: "ok";
     let newObj;
 
     _.forEach(mapData.products, mapdata => {
@@ -164,6 +164,7 @@ this.listingHeaders = mapData;
       lat = mapdata.lat;
       lng = mapdata.lng;
       status = mapdata.status;
+      servicestatus = mapdata.servicestatus;
       if (mapdata.status == 0)
         icon = this.imggithubpath + 'green.png' + this.imgpathsuffice;
       else if (mapdata.status == 1)
@@ -177,6 +178,7 @@ this.listingHeaders = mapData;
         lng: lng,
         icon: icon,
         status: status,
+        servicestatus : servicestatus,
         desc: mapdata.description,
         id: mapdata.id,
         products: mapdata.products

@@ -49,7 +49,7 @@
          "itemtype":"string",
          "linkurl":"#",
          "itemwidth":"12em",
-         "visible":true,
+         "visible":false,
          "fieldid":"desc"
       },
        {
@@ -61,11 +61,21 @@
          "itemwidth":"12em",
          "visible":false,
          "fieldid":"lastservice"
+      },
+       {
+         "widget":"column",
+         "title":"Service Status",
+         "attributeid":"6",
+         "itemtype":"string",
+         "linkurl":"#",
+         "itemwidth":"12em",
+         "visible":true,
+         "fieldid":"servicestatus" 
       }
    ]
    },
 "products":[
-    {"lat": -27.81938219, "lng": 152.38865828, "status": 1, "description": "40-60 percent", "id": 1001,
+    {"lat": -27.81938219, "lng": 152.38865828, "status": 1, "description": "40-60 percent", "id": 1001, "servicestatus": "ok",
         "products" :[{
             "id": 1,
             "name": "Coke",
@@ -100,7 +110,7 @@
         ]
         
     },
-    {"lat": -27.84941128, "lng": 152.34522264, "status": 3, "description": "below 20 percent", "id": 9234,
+    {"lat": -27.84941128, "lng": 152.34522264, "status": 3, "description": "below 20 percent", "id": 9234, "servicestatus": "ok",
         "products" :[{
             "id": 1,
             "name": "Coke",
@@ -134,7 +144,7 @@
           }
         ]
     },
-    {"lat": -27.80097689, "lng": 152.35210023, "status": 3, "description": "below 20 percent", "id": 1456,
+    {"lat": -27.80097689, "lng": 152.35210023, "status": 3, "description": "below 20 percent", "id": 1456, "servicestatus": "ok",
         "products" :[{
             "id": 1,
             "name": "Coke",
@@ -168,7 +178,7 @@
           }
         ]
     },
-    {"lat": -27.84221097, "lng": 152.39325148, "status": 1, "description": "40-60 percent", "id": 1557,
+    {"lat": -27.84221097, "lng": 152.39325148, "status": 1, "description": "40-60 percent", "id": 1557, "servicestatus": "ok",
         "products" :[{
             "id": 1,
             "name": "Coke",
@@ -202,7 +212,7 @@
           }
         ]
     },
-    {"lat": -27.79315217, "lng": 152.38633075, "status": 0, "description": "above 80 percent", "id": 1588,
+    {"lat": -27.79315217, "lng": 152.38633075, "status": 0, "description": "above 80 percent", "id": 1588, "servicestatus": "ok",
         "products" :[{
             "id": 1,
             "name": "Coke",
@@ -236,7 +246,7 @@
           }
         ]
     },
-    {"lat": -27.81023481, "lng": 152.31865625, "status": 2, "description": "20-40 percent", "id": 1692,
+    {"lat": -27.81023481, "lng": 152.31865625, "status": 2, "description": "20-40 percent", "id": 1692, "servicestatus": "ok",
         "products" :[{
             "id": 1,
             "name": "Coke",
@@ -270,7 +280,7 @@
           }
         ]
     },
-    {"lat": -27.84134058, "lng": 152.35657281, "status": 0, "description": "above 80 percent", "id": 1696,
+    {"lat": -27.84134058, "lng": 152.35657281, "status": 0, "description": "above 80 percent", "id": 1696, "servicestatus": "ok",
         "products" :[{
             "id": 1,
             "name": "Coke",
