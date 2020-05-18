@@ -32,7 +32,7 @@
          "attributeid":"5c",
          "itemtype":"number",
          "itemwidth":"12em",
-         "visible":true,
+         "visible":false,
          "value": 0.05
 
       },
@@ -146,6 +146,15 @@
          "itemwidth":"12em",
          "visible":true,
          "value": 500.00
+      },
+      {
+          "widget":"menuitem",
+         "title":"$1000",
+         "attributeid":"$1000",
+         "itemtype":"number",
+         "itemwidth":"12em",
+         "visible":true,
+         "value": 1000.00
       }
    ]
 }
