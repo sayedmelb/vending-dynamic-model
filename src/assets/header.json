@@ -1,8 +1,8 @@
 {
    "widget":"menu",
-   "sitetitle":"Vending Machines",
+   "sitetitle":"Vending Machines test",
    "mainheading":"Angular Dynamic Schema model- demo - syed",
-   "mainsummary":"This is a Vending Machine Application with the following update below",
+   "mainsummary":" Hello hi sdsThis is a Vending Machine Application with the following update below",
   
    "detailssection":{
       "heading":"Details",
@@ -54,7 +54,16 @@
          "itemtype":"text",
          "linkurl":"#",
          "itemwidth":"12em",
-         "visible":false
+         "visible":true
+      },
+      {
+         "widget":"menuitem",
+         "title":"logs",
+         "attributeid":"logs",
+         "itemtype":"text",
+         "linkurl":"#",
+         "itemwidth":"12em",
+         "visible":true
       }
    ]
 }
