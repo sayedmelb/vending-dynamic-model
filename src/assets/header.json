@@ -40,7 +40,7 @@
       },
       {
          "widget":"menuitem",
-         "title":"Listings",
+         "title":"Listings Test",
          "attributeid":"listing",
          "itemtype":"text",
          "linkurl":"#",
