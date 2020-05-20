@@ -4,7 +4,7 @@
       "fields":[
       {
          "widget":"column",
-         "title":"Machine number",
+         "title":"Machine id",
          "attributeid":"1",
          "itemtype":"number",
          "linkurl":"#",
