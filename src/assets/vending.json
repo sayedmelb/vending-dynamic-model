@@ -32,7 +32,7 @@
          "attributeid":"5c",
          "itemtype":"number",
          "itemwidth":"12em",
-         "visible":false,
+         "visible":true,
          "value": 0.05
 
       },
